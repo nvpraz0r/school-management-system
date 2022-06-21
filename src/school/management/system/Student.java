@@ -33,6 +33,21 @@ public class Student {
         feesTotal = 3000.00;
     }
 
+    /**
+     *
+     * This function updates the student's grade
+     * @param grade student's new grade
+     */
+    public void setGrade(double grade){
+        this.grade = grade;
+    }
 
+    /**
+     *
+     * @param fees tuition that the student has paid thus far
+     */
+    public void updateFeesPaid(double fees){
+        feesPaid += fees;
+    }
 
 }
