@@ -32,5 +32,8 @@ public class Main {
 
         School JLS = new School(teacherList, studentList);
 
+        /**
+         * Create a user interface
+         */
     }
 }
