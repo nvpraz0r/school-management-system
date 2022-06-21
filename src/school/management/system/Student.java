@@ -35,19 +35,33 @@ public class Student {
 
     /**
      *
-     * This function updates the student's grade
-     * @param grade student's new grade
-     */
-    public void setGrade(double grade){
-        this.grade = grade;
-    }
-
-    /**
-     *
      * @param fees tuition that the student has paid thus far
      */
     public void updateFeesPaid(double fees){
         feesPaid += fees;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getGrade() {
+        return grade;
+    }
+
+    public double getFeesPaid() {
+        return feesPaid;
+    }
+
+    public double getFeesTotal() {
+        return feesTotal;
+    }
+
+    public void setGrade(double grade){
+        this.grade = grade;
+    }
 }

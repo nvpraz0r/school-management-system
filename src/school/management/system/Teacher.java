@@ -29,4 +29,8 @@ public class Teacher {
         return salary;
     }
 
+    public void setSalary(double salary){
+        this.salary = salary;
+    }
+
 }
