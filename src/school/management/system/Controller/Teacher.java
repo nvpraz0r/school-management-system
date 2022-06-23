@@ -1,4 +1,4 @@
-package school.management.system;
+package school.management.system.Controller;
 
 /**
  * This class maintains data related to the teacher class

@@ -1,14 +1,14 @@
-package school.management.system;
+package school.management.system.Model;
+
+import school.management.system.Controller.School;
+import school.management.system.Controller.Student;
+import school.management.system.Controller.Teacher;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-    public static void main(String[] args) {
-        generateData();
-    }
-
-    public static void generateData(){
+public class GenerateData {
+    public void generateData() {
         List<Teacher> teacherList = new ArrayList<>();
 
         Teacher A = new Teacher(1, "Amanda", 500.00);
