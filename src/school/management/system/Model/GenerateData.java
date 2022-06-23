@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenerateData {
-    public void generateData() {
+    public static void generateData() {
         List<Teacher> teacherList = new ArrayList<>();
 
         Teacher A = new Teacher(1, "Amanda", 500.00);
