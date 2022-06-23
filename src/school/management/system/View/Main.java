@@ -5,28 +5,25 @@ import school.management.system.Model.GenerateData;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+    private static String userInput = "";
+
+    public static void main(String[] args) {
 
         // generate the data to be interacted with
         GenerateData generate = new GenerateData();
         generate.generateData();
 
-        String userInput = "";
+
+        displayMenu();
 
         do {
-            displayMenu();
-            userInput = sc.next();
-            sc.nextLine();
-
-            switch (userInput.toLowerCase()){
-                case "s":
-                    studentSubMenu();
-                case "t":
-                    teacherSubMenu();
-                default:
-                    System.out.println("Unknown command. Please try again.");
+            userInput = GetInput.getString();
+            switch (userInput){
+                case "s" -> studentSubMenu();
+                case "t" -> teacherSubMenu();
+                case "e" -> System.out.println("Exiting");
+                default -> System.out.println("Unknown command. Please try again.");
             }
 
 
@@ -42,11 +39,28 @@ public class Main {
         System.out.println("T. - Find Teacher");
         System.out.println("E. - Exit");
         System.out.println("===============");
-        System.out.print("Command: ");
+    }
+
+    public static void displayStudentMenu(){
+        System.out.println("\n");
+        System.out.println("===============");
+        System.out.println("School Management System");
+        System.out.println("Student Menu");
+        System.out.println("P. - Pay Tuition");
+        System.out.println("E. - Exit");
+        System.out.println("===============");
     }
 
     public static void studentSubMenu(){
-        System.out.println("Student Sub Menu");
+        displayStudentMenu();
+        do{
+            userInput = GetInput.getString();
+            switch (userInput){
+                case "p" -> System.out.println("Tuition Paid");
+                case "e" -> System.out.println("Exiting Student Sub Menu");
+                default -> System.out.println("Unknown command. Please Try again");
+            }
+        } while(!userInput.equals("e"));
     }
 
     public static void teacherSubMenu(){
