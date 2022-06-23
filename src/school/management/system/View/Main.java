@@ -24,7 +24,7 @@ public class Main {
     }
 
     /**
-     * 
+     *
      */
     public static void displayMenu(){
         System.out.println("\n");
