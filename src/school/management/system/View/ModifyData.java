@@ -7,7 +7,14 @@ package school.management.system.View;
 
 public class ModifyData {
     public static void payTuition(){
-        //
+        /**
+         * prompt user to find student
+         *      -show tuition amount owed for that student
+         * ask how much the user would like to pay
+         *      -show remaining tuition payment (if any)
+         */
+
+
     }
 
     public static void salaryRaise(){

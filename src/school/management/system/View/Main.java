@@ -2,13 +2,12 @@ package school.management.system.View;
 import school.management.system.Model.GenerateData;
 
 public class Main {
-
-    private static String userInput = "";
-
     public static void main(String[] args) {
 
         // generate the data to be interacted with
         GenerateData.generateData();
+
+        String userInput = "";
 
         displayMenu();
 
